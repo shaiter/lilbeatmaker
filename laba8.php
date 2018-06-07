@@ -1,3 +1,13 @@
+/**
+ * Created by PhpStorm.
+ * User: artemsajter
+ * Date: 6/6/18
+ * Time: 16:03
+ */
+
+<?php
+include 'stat.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,14 +38,12 @@
 </header>
 
 <main>
-    <div class="article_container">
-        <div class="article">
-            <h1><?php echo $title; ?></h1>
-            <img class="item_image" src="img/<?php echo $img; ?>" alt="">
-            <p>Дата выхода:<?php echo $release_date; ?> </p>
-            <p>Версия:<?php echo $version; ?> </p>
-            <p>Разработчик:<?php echo $developer; ?> </p>
-            <p>Платформа:<?php echo $platform; ?> </p>
+    <div class="articles_container">
+        <div class="articles">
+            <br><h2>Press the button to send statistics:</h2><br>
+            <form method="POST" action="send_stat.php">
+                <input class="button" type="submit" value="Send" name="name">
+            </form><br><br>
         </div>
     </div>
 </main>

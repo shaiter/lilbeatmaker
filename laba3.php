@@ -6,6 +6,8 @@
  * Time: 08:07
  */
 
+include 'stat.php';
+
 function search($inarr, $search_value, $outarr = array(), $temp_outarr = array()) {
     foreach ($inarr as $index => $value) {
         if (is_array($value)){

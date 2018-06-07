@@ -1,3 +1,7 @@
+<?php
+include 'stat.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +21,10 @@
         <div class="topnav" id="myTopnav">
             <a href="index.html">Главная</a>
             <a href="reading.html">Чтиво</a>
-            <a href="labs.html">Лабы</a>
+            <a href="labs.php">Лабы</a>
             <a href="in_developing.html">VST Эффекты</a>
             <a href="in_developing.html">Сэмплы</a>
-            <a href="about.html">Об авторе</a>reading.html
+            <a href="about.html">Об авторе</a>
             <a id="menu" href="#" class="icon">&#9776;</a>
         </div>
     </nav>
@@ -39,11 +43,9 @@
 
             $data = get_vst_effects($duration,$memory);
 
-
             $array = array();
 
             foreach ($data as $item ){
-                echo "№: $item[id] title: $item[title] release date: $item[release_date] version: $item[version] developer: $item[developer] platform: $item[platform] \n";
                 $vst = new Vst_plugin($item["title"], $item["release_date"], $item["version"], $item["developer"], $item["platform"]);
                 array_push($array, $vst);
             }
@@ -60,7 +62,7 @@
     <nav>
         <a href="index.html">Главная</a>
         <a href="reading.html">Чтиво</a>
-        <a href="labs.html">Лабы</a>
+        <a href="labs.php">Лабы</a>
         <a href="in_developing.html">VST Эффекты</a>
         <a href="in_developing.html">Сэмплы</a>
         <a href="about.html">Об авторе</a>

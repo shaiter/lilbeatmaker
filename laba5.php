@@ -1,3 +1,7 @@
+<?php
+include 'stat.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,7 @@
         <div class="topnav" id="myTopnav">
             <a href="index.html">Главная</a>
             <a href="reading.html">Чтиво</a>
-            <a href="labs.html">Лабы</a>
+            <a href="labs.php">Лабы</a>
             <a href="in_developing.html">VST Эффекты</a>
             <a href="in_developing.html">Сэмплы</a>
             <a href="about.html">Об авторе</a>
@@ -73,7 +77,7 @@
     <nav>
         <a href="index.html">Главная</a>
         <a href="reading.html">Чтиво</a>
-        <a href="labs.html">Лабы</a>
+        <a href="labs.php">Лабы</a>
         <a href="in_developing.html">VST Эффекты</a>
         <a href="in_developing.html">Сэмплы</a>
         <a href="about.html">Об авторе</a>

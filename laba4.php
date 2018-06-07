@@ -1,5 +1,7 @@
 <?php
 
+include 'stat.php';
+
 setlocale(LC_ALL, 'UTF-8');
 
 function find_collocation($text, $search_text){

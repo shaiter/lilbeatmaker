@@ -1,3 +1,7 @@
+<?php
+include 'stat.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +21,10 @@
         <div class="topnav" id="myTopnav">
             <a href="index.html">Главная</a>
             <a href="reading.html">Чтиво</a>
-            <a href="labs.html">Лабы</a>
+            <a href="labs.php">Лабы</a>
             <a href="in_developing.html">VST Эффекты</a>
             <a href="in_developing.html">Сэмплы</a>
-            <a href="about.html">Об авторе</a>reading.html
+            <a href="about.html">Об авторе</a>
             <a id="menu" href="#" class="icon">&#9776;</a>
         </div>
     </nav>
@@ -39,8 +43,9 @@
             session_start();
             if (isset($_SESSION['value']))
             {
+
                 $value= $_SESSION['value'];
-                //echo $value . '<br/>';
+                echo $value;
                 $data = unserialize($value);
                 foreach ($data as $item ){
                     $item->print();
@@ -57,7 +62,7 @@
     <nav>
         <a href="index.html">Главная</a>
         <a href="reading.html">Чтиво</a>
-        <a href="labs.html">Лабы</a>
+        <a href="labs.php">Лабы</a>
         <a href="in_developing.html">VST Эффекты</a>
         <a href="in_developing.html">Сэмплы</a>
         <a href="about.html">Об авторе</a>

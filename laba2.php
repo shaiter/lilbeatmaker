@@ -1,5 +1,7 @@
 <?php
 
+include 'stat.php';
+
 function fnc(&$arr) {
     foreach ($arr as $i => &$value) {
         if (is_array($value)){
